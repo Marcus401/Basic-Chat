@@ -1,10 +1,14 @@
 const express = require("express")
 const path = require("path")
+const { createServer } = require("http")
+const { Server } = require("socket.io");
+
 
 const app = express()
-const server = require("http").createServer(app)
+const server = createServer(app)
+const io = new Server(server);
+app.use(express.static(path.join(__dirname)))
 
-const io = require("socket.io")(server);
 io.on("connection", function(socket){
     socket.on("newuser", function(username){
       socket.broadcast.emit("update", username + "joined the conversation")
@@ -13,7 +17,7 @@ io.on("connection", function(socket){
       socket.broadcast.emit("update", username + "joined the conversation")
     })
     socket.on("chat", function(message){
-      socket.broadcast.emit("update", " message")
+      socket.broadcast.emit("chat", message)
     })
 
 })

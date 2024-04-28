@@ -19,6 +19,7 @@
     "webpack-merge": "^5.10.0"
   },
   "dependencies": {
+    "@types/socket.io": "^3.0.2",
     "express": "^4.19.2",
     "socket.io": "^4.7.5"
   },
