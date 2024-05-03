@@ -5,3 +5,4 @@
 * Marcus Acaba
 * Myles Reyes
 * Rica Arroyo
+* Augosto Delos Reyes
