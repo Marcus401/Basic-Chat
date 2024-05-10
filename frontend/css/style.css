@@ -20,7 +20,6 @@ body {
   max-width: 80%;
   border-left: 1px solid black;
   border-right: 1px solid black;
-  background-color: #F8EDE3;
 }
 .app > .screen {
   display: none;
@@ -30,6 +29,8 @@ body {
   display: block;
   width: 100%;
   height: 100%;
+  background: rgb(238,245,255);
+  background: linear-gradient(0deg, rgba(238,245,255,1) 0%, rgba(180,212,255,1) 35%, rgba(134,182,246,1) 100%);
 }
 
 .screen .form {
@@ -72,6 +73,7 @@ body {
   border: 1px solid #555;
   border-radius: 15px;
   font-size: 10px;
+  text-align: center;
 }
 
 .screen .form-input button {
