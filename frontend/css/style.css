@@ -1,5 +1,5 @@
 html {
-  background: black;
+  background: #383838;
 }
 
 * {
@@ -18,7 +18,6 @@ body {
   width: 100%;
   height: 100%;
   max-width: 80%;
-  background: #ffffff;
   border-left: 1px solid black;
   border-right: 1px solid black;
   background-color: #F8EDE3;
