@@ -97,11 +97,12 @@ body {
   font-size: 15px;
   color: #eee;
   font-weight: 600;
+  align-self: center;
 }
 
 .chat-screen .header button {
   padding: 5px 10px;
-  border: 1px solid #eee;
+  border: 1px solid #111111;
   background: transparent;
   color: #eee;
   font-size: 15px;
@@ -127,6 +128,7 @@ body {
   background: #fff;
   box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.05);
   padding: 10px;
+  border-radius: 10px;
 }
 
 .chat-screen .messages .message.my-message {
@@ -163,10 +165,12 @@ body {
   flex: 1;
   height: 50px;
   font-size: 15px;
+  padding-left: 10px;
 }
 
 .chat-screen .typebox button {
   font-family: "Roboto", sans-serif;
+  border-radius: 16px;
   font-weight: bold;
   width: 120px;
   height: 100%;
