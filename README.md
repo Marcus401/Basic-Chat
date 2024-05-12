@@ -8,7 +8,7 @@ made for Computer Programming II Case Study
 * open http://localhost:5000 in your browser
 * use multiple instances to communicate
 
-Written in HTML,CSS, Javascript, and in Node.js using socket.io
+Written in HTML,CSS, Javascript, and in Node.js using socket.io and crypto.js for encryption using AES
 - - -
 # Members:
 * Marcus Acaba
