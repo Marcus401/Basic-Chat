@@ -4,6 +4,7 @@ const { createServer } = require("http")
 const { Server } = require("socket.io");
 const CryptoJS = require('crypto-js/core')
 CryptoJS.AES = require("crypto-js/aes");
+const opn = require('opn');
 
 const key = "SECRET-KEY"
 const iv = "SECRET-IV"
@@ -11,6 +12,7 @@ const iv = "SECRET-IV"
 const app = express()
 const server = createServer(app)
 const io = new Server(server);
+opn('http://localhost:5000');
 
 app.use(express.static(path.join(__dirname)))
 io.on("connection", function(socket){
