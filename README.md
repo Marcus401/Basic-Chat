@@ -16,4 +16,10 @@ Written in HTML,CSS, Javascript, and in Node.js using socket.io and crypto.js fo
 * Rica Arroyo
 * Augosto Delos Reyes
 
+### files used (for checking):
+* index.html
+* style.css
+* server.js
+* code.js
+
 
