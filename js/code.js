@@ -1,6 +1,10 @@
 (function(){
   const app = document.querySelector(".app");
   const socket = io();
+  // Define your secret key and iv
+  const key = "SECRET-KEY"
+  const iv = "SECRET-IV"
+
 
   let uname;
 
@@ -42,6 +46,8 @@
   })
 
   socket.on("chat", function(message){
+    let decryptedBytes = CryptoJS.AES.decrypt(message.text, key, { iv: iv });
+    message.text = CryptoJS.enc.Utf8.stringify(decryptedBytes);
     renderMessage("other", message);
   })
 
